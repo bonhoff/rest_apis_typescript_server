@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist", //Archivo donde queremos que se guarde
+        "rootDir": "./src", //Archivo raíz
+        "lib": ["esnext"],  //Versión de JS a la que se va a compilar
+        "target": "ES6",
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext",
+        "strict": false,    //Permitir ANY o no
+        "sourceMap": true,  //Genera un mapa con información interna
+        "esModuleInterop": true,    //Por si tenemos que utilizar alguna librería que use CommonJS
+        "declaration": true, //Genera los archivos de definición
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "ignoreDeprecations": "5.0",
+    },
+    "include": ["src/**/*.ts"],  //Los archivos que queremos incluir en la compilación
+    "exclude": ["src/**/*.test.ts"]
+}
